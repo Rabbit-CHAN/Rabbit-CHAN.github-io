@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ihubx.top/"/>
-  <updated>2020-06-27T14:04:20.263Z</updated>
+  <updated>2020-06-27T14:12:14.344Z</updated>
   <id>https://ihubx.top/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://ihubx.top/vmwareErrorWithNewWindows10.html"/>
     <id>https://ihubx.top/vmwareErrorWithNewWindows10.html</id>
     <published>2019-10-28T02:16:48.000Z</published>
-    <updated>2020-06-27T14:04:20.263Z</updated>
+    <updated>2020-06-27T14:12:14.344Z</updated>
     
-    <content type="html"><![CDATA[<p>///VMware Workstation pro 无法在 Windows 上运行，检查可在 Windows 上运行的此应用的更新版本///<br>如何解决？</p><a id="more"></a><hr><blockquote><p>如果您无法正常查看本文的图片，请访问我的语雀空间查看备份文档：<a href="https://www.yuque.com/oneforall/myblog/ng2nmz" target="_blank" rel="noopener">语雀|VMware Workstation pro 无法在 Windows 上运行，检查可在 Windows 上运行的此应用的更新版本</a></p></blockquote><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1570786276682-9028b486-0752-482c-800e-8877efef19f7.png#align=left&display=inline&height=159&margin=%5Bobject%20Object%5D&name=image.png&originHeight=185&originWidth=355&size=53845&status=done&style=none&width=306" alt="image.png" title="">                </div>                <div class="image-caption">image.png</div>            </figure><h2 id="Solution1-卸载-Windows-更新"><a href="#Solution1-卸载-Windows-更新" class="headerlink" title="Solution1: 卸载 Windows 更新"></a>Solution1: 卸载 Windows 更新</h2><p>卸载图中的两个更新后重启电脑，VMware 就能正常使用了~</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1572227631539-3d895d2e-c825-4919-92ad-e0a7536e4f3d.png#align=left&display=inline&height=682&margin=%5Bobject%20Object%5D&name=image.png&originHeight=682&originWidth=1170&size=113295&status=done&style=none&width=1170" alt="image.png" title="">                </div>                <div class="image-caption">image.png</div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1570795572950-0ec6d468-8462-439b-8fec-575123c85a32.png#align=left&display=inline&height=575&margin=%5Bobject%20Object%5D&name=image.png&originHeight=726&originWidth=814&size=55656&status=done&style=none&width=645" alt="image.png" title="">                </div>                <div class="image-caption">image.png</div>            </figure><p>必要的话，你还可以参考这篇文章停止 Windows 自动更新：<a href="https://www.diyihuifu.com/how-to-stop-windows-10-update.html" target="_blank" rel="noopener">如何停止 Windows 10 更新</a></p><h2 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h2><p><a href="https://www.jb51.net/article/171516.htm" target="_blank" rel="noopener">VMware Workstation Pro 无法在 Windows 上运行的解决方法</a><br><a href="https://www.youtube.com/watch?v=AdRvR6dtHeo" target="_blank" rel="noopener">YouTube|Fix VMware Workstation Pro 14.1.7/12.5.9 not starting on Windows 10 1903</a></p><hr>]]></content>
+    <content type="html"><![CDATA[<p>VMware Workstation pro 无法在 Windows 上运行，检查可在 Windows 上运行的此应用的更新版本<br>如何解决？</p><a id="more"></a><hr><blockquote><p>如果您无法正常查看本文的图片，请访问我的语雀空间查看备份文档：<a href="https://www.yuque.com/oneforall/myblog/ng2nmz" target="_blank" rel="noopener">语雀|VMware Workstation pro 无法在 Windows 上运行，检查可在 Windows 上运行的此应用的更新版本</a></p></blockquote><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1570786276682-9028b486-0752-482c-800e-8877efef19f7.png#align=left&display=inline&height=159&margin=%5Bobject%20Object%5D&name=image.png&originHeight=185&originWidth=355&size=53845&status=done&style=none&width=306" alt="image.png" title="">                </div>                <div class="image-caption">image.png</div>            </figure><h2 id="Solution1-卸载-Windows-更新"><a href="#Solution1-卸载-Windows-更新" class="headerlink" title="Solution1: 卸载 Windows 更新"></a>Solution1: 卸载 Windows 更新</h2><p>卸载图中的两个更新后重启电脑，VMware 就能正常使用了~</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1572227631539-3d895d2e-c825-4919-92ad-e0a7536e4f3d.png#align=left&display=inline&height=682&margin=%5Bobject%20Object%5D&name=image.png&originHeight=682&originWidth=1170&size=113295&status=done&style=none&width=1170" alt="image.png" title="">                </div>                <div class="image-caption">image.png</div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1570795572950-0ec6d468-8462-439b-8fec-575123c85a32.png#align=left&display=inline&height=575&margin=%5Bobject%20Object%5D&name=image.png&originHeight=726&originWidth=814&size=55656&status=done&style=none&width=645" alt="image.png" title="">                </div>                <div class="image-caption">image.png</div>            </figure><p>必要的话，你还可以参考这篇文章停止 Windows 自动更新：<a href="https://www.diyihuifu.com/how-to-stop-windows-10-update.html" target="_blank" rel="noopener">如何停止 Windows 10 更新</a></p><h2 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h2><p><a href="https://www.jb51.net/article/171516.htm" target="_blank" rel="noopener">VMware Workstation Pro 无法在 Windows 上运行的解决方法</a><br><a href="https://www.youtube.com/watch?v=AdRvR6dtHeo" target="_blank" rel="noopener">YouTube|Fix VMware Workstation Pro 14.1.7/12.5.9 not starting on Windows 10 1903</a></p><hr>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;///VMware Workstation pro 无法在 Windows 上运行，检查可在 Windows 上运行的此应用的更新版本///&lt;br&gt;如何解决？&lt;/p&gt;
+      &lt;p&gt;VMware Workstation pro 无法在 Windows 上运行，检查可在 Windows 上运行的此应用的更新版本&lt;br&gt;如何解决？&lt;/p&gt;
     
     </summary>
     
@@ -92,8 +92,8 @@
   
   <entry>
     <title>【持续更新】文本处理相关知识整理</title>
-    <link href="https://ihubx.top/ckbxpwy6500085gebbqih7z1p.html"/>
-    <id>https://ihubx.top/ckbxpwy6500085gebbqih7z1p.html</id>
+    <link href="https://ihubx.top/ckbxr9s4w0008u0eb0pyi04xh.html"/>
+    <id>https://ihubx.top/ckbxr9s4w0008u0eb0pyi04xh.html</id>
     <published>2019-08-13T12:37:50.000Z</published>
     <updated>2020-06-27T14:04:20.344Z</updated>
     
