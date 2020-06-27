@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="referrer" content="no-referrer" />
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?ede890dab96ffd8364332a6e756cb745"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>语雀+hexo自动部署 | Hu&#39;s space | 让知识和感悟不那么孤单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="hexo,yuque">
+    <meta name="description" content="语雀+hexo 自动部署">
+<meta property="og:type" content="article">
+<meta property="og:title" content="语雀+hexo自动部署">
+<meta property="og:url" content="https://ihubx.top/posts/yuqueANDhexo.html">
+<meta property="og:site_name" content="Hu&#39;s space">
+<meta property="og:description" content="语雀+hexo 自动部署">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/302376/1565492831423-81b00090-d3dd-4881-be2b-a2eb317ab556.png#align=left&display=inline&height=186&margin=%5Bobject%20Object%5D&name=image.png&originHeight=186&originWidth=562&size=18713&status=done&style=none&width=562">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/302376/1565494135096-8b826d85-c432-4f8b-bac4-ebe8f7f4ebe2.png#align=left&display=inline&height=476&margin=%5Bobject%20Object%5D&name=image.png&originHeight=476&originWidth=1043&size=45101&status=done&style=none&width=1043">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/302376/1565495393243-910fde74-ae0a-4779-9780-dd1ee5ef4a0b.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=177&originWidth=720&size=15447&status=done&style=none&width=720">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/302376/1565494263158-d912e93c-3e65-444c-a6be-9de95ab92ded.png#align=left&display=inline&height=126&margin=%5Bobject%20Object%5D&name=image.png&originHeight=126&originWidth=720&size=12712&status=done&style=none&width=720">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/302376/1565498076799-5f9739b2-82e6-4b27-aed6-8163873d95f0.png#align=left&display=inline&height=145&margin=%5Bobject%20Object%5D&name=image.png&originHeight=145&originWidth=562&size=12604&status=done&style=none&width=562">
+<meta property="article:published_time" content="2019-08-11T02:14:44.000Z">
+<meta property="article:modified_time" content="2020-06-27T14:04:20.421Z">
+<meta property="article:author" content="修行の胡">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="yuque">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/302376/1565492831423-81b00090-d3dd-4881-be2b-a2eb317ab556.png#align=left&display=inline&height=186&margin=%5Bobject%20Object%5D&name=image.png&originHeight=186&originWidth=562&size=18713&status=done&style=none&width=562">
+    
+        <link rel="alternate" type="application/atom+xml" title="Hu&#39;s space" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon-32x32.png">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/logo.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">修行の胡</h5>
+          <a href="mailto:hubx99@qq.com" title="hubx99@qq.com" class="mail">hubx99@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Rabbit-CHAN" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">语雀+hexo自动部署</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">语雀+hexo自动部署</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-08-11T02:14:44.000Z" itemprop="datePublished" class="page-time">
+  2019-08-11
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/blog/">blog</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#0-心路历程"><span class="post-toc-number">1.</span> <span class="post-toc-text">0 心路历程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-yuque-hexo-配置"><span class="post-toc-number">2.</span> <span class="post-toc-text">1 yuque-hexo 配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-1-安装"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.1 安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-2-配置"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">1.2 配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-2-私有知识库配置"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">1.2+ 私有知识库配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-3-部署-需手动"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">1.3 部署(需手动)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-3-1-同步"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">1.3.1 同步</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-3-2-本地预览"><span class="post-toc-number">2.3.2.</span> <span class="post-toc-text">1.3.2 本地预览</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-3-3-部署"><span class="post-toc-number">2.3.3.</span> <span class="post-toc-text">1.3.3 部署</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-3-Npm-Scripts"><span class="post-toc-number">2.3.4.</span> <span class="post-toc-text">1.3+ Npm Scripts?</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-实现自动部署"><span class="post-toc-number">3.</span> <span class="post-toc-text">2 实现自动部署</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#待读："><span class="post-toc-number">4.</span> <span class="post-toc-text">待读：</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-yuque-yuquehexo"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">语雀+hexo自动部署</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-08-11 10:14:44" datetime="2019-08-11T02:14:44.000Z"  itemprop="datePublished">2019-08-11</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/blog/">blog</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>语雀+hexo 自动部署</p>
+<a id="more"></a>
+
+<hr>
+<h2 id="0-心路历程"><a href="#0-心路历程" class="headerlink" title="0 心路历程"></a>0 心路历程</h2><p>本文写于 2019.08.11  10:14</p>
+<p>2019 年年初，我搭建好了 hexo+Github Page 的静态博客，随后我接触了语雀。从使用体验上讲，在语雀上写文章确实比纯写 markdown 文章要方便得多，后来就一直在用语雀写作或者做笔记了（emm 目前大部分文章仍处于私密状态）。从大体上讲，我创建博客的初衷，是在网络上分享自己的知识总结，重在内容而非格式，所以，若要非前端背景的我兼顾语雀和 hexo 的文章发布，实在很费精力。站在这样的出发点上，自己就渐渐没怎么管 hexo 博客了。</p>
+<p>可是偶然看到这篇文章—— <a href="http://www.zhongchaocheng.top/yuque/%E4%BD%BF%E7%94%A8%E8%AF%AD%E9%9B%80%E6%9D%A5%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" target="_blank" rel="noopener">Blog|使用语雀来编辑博客文章</a> ，便启发我将两者结合起来，最大化地综合两者的优势。<a href="http://www.zhongchaocheng.top/yuque/%E4%BD%BF%E7%94%A8%E8%AF%AD%E9%9B%80%E6%9D%A5%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" target="_blank" rel="noopener">Blog|使用语雀来编辑博客文章</a>提到的是利用库 <code>yuque-hexo</code>  把语雀中的文章，转换成 Hexo 能够识别的 md 文件，然后部署到个人博客里。既然发现这么一个方便的东西，我自然忍不住要拿来用了。之后看到更加自动化的方式 <a href="https://www.yuque.com/u46795/blog/dlloc7" target="_blank" rel="noopener">Blog|Hexo 博客终极玩法：云端写作，自动部署</a>  心里就更是欣喜了。由衷感谢这些 dalao 们探索和分享！</p>
+<p>考虑到精力和基础等因素，我们由易到难，先看看单纯使用<code>yuque-hexo</code>  的效果。</p>
+<h2 id="1-yuque-hexo-配置"><a href="#1-yuque-hexo-配置" class="headerlink" title="1 yuque-hexo 配置"></a>1 yuque-hexo 配置</h2><p>参考项目地址：<a href="https://github.com/x-cold/yuque-hexo" target="_blank" rel="noopener">https://github.com/x-cold/yuque-hexo</a></p>
+<h3 id="1-1-安装"><a href="#1-1-安装" class="headerlink" title="1.1 安装"></a>1.1 安装</h3><p>进入本地的博客项目路径，打开 Git bash,输入 <code>$ npm i -g yuque-hexo</code>  安装<strong>yuque-hexo</strong><br>如果安装较慢，可以[临时]通过 config 配置指向国内镜像源(ref: <a href="http://yijiebuyi.com/blog/b12eac891cdc5f0dff127ae18dc386d4.html" target="_blank" rel="noopener">给电脑换源 npm 国内镜像 cnpm</a>)：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 指向国内镜像源 https://npm.taobao.org</span></span><br><span class="line">$ npm config <span class="built_in">set</span> registry http://registry.npm.taobao.org</span><br><span class="line">$ npm i -g yuque-hexo</span><br></pre></td></tr></table></figure>
+
+<p>示意图如下， <code>/d/BLOG/blog</code>  即我的博客项目路径：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1565492831423-81b00090-d3dd-4881-be2b-a2eb317ab556.png#align=left&display=inline&height=186&margin=%5Bobject%20Object%5D&name=image.png&originHeight=186&originWidth=562&size=18713&status=done&style=none&width=562" alt="image.png" title="">
+                </div>
+                <div class="image-caption">image.png</div>
+            </figure>
+
+<h3 id="1-2-配置"><a href="#1-2-配置" class="headerlink" title="1.2 配置"></a>1.2 配置</h3><p>打开博客项目路径中的 <code>D:\BLOG\blog\package.json</code>  新增下面的代码：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"yuqueConfig"</span>: &#123;</span><br><span class="line">   <span class="string">"postPath"</span>: <span class="string">"source/_posts/yuque"</span>,</span><br><span class="line">   <span class="string">"cachePath"</span>: <span class="string">"yuque.json"</span>,</span><br><span class="line">   <span class="string">"mdNameFormat"</span>: <span class="string">"title"</span>,</span><br><span class="line">   <span class="string">"adapter"</span>: <span class="string">"hexo"</span>,</span><br><span class="line">   <span class="string">"concurrency"</span>: <span class="number">5</span>,</span><br><span class="line">   <span class="string">"baseUrl"</span>: <span class="string">"https://www.yuque.com/api/v2"</span>,</span><br><span class="line">   <span class="string">"login"</span>: <span class="string">"oneforall"</span>,</span><br><span class="line">   <span class="string">"repo"</span>: <span class="string">"MyBlog"</span>,</span><br><span class="line">   <span class="string">"onlyPublished"</span>: <span class="literal">false</span></span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>含义</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>postPath</td>
+<td>文档同步后生成的路径</td>
+<td>source/_posts/yuque</td>
+</tr>
+<tr>
+<td>cachePath</td>
+<td>文档下载缓存文件</td>
+<td>yuque.json</td>
+</tr>
+<tr>
+<td>mdNameFormat</td>
+<td>文件名命名方式 (title / slug)</td>
+<td>title</td>
+</tr>
+<tr>
+<td>adapter</td>
+<td>文档生成格式 (hexo/markdown)</td>
+<td>hexo</td>
+</tr>
+<tr>
+<td>concurrency</td>
+<td>下载文章并发数</td>
+<td>5</td>
+</tr>
+<tr>
+<td>baseUrl</td>
+<td>语雀 API 地址</td>
+<td>按默认即可</td>
+</tr>
+<tr>
+<td>login</td>
+<td>语雀 login (group), 也称为个人路径</td>
+<td><strong>oneforall</strong></td>
+</tr>
+<tr>
+<td>repo</td>
+<td>语雀仓库短名称，也称为语雀知识库路径</td>
+<td><strong>MyBlog</strong></td>
+</tr>
+<tr>
+<td>onlyPublished</td>
+<td>只展示已经发布的文章</td>
+<td>false</td>
+</tr>
+</tbody></table>
+<h4 id="1-2-私有知识库配置"><a href="#1-2-私有知识库配置" class="headerlink" title="1.2+ 私有知识库配置"></a>1.2+ 私有知识库配置</h4><p>PS. 如果你的知识库是私有的，则需要在<code>package.json</code>注入环境变量 <code>YUQUE_TOKEN=xxx</code> 。在语雀上点击 个人头像 -&gt; 账户设置 -&gt; Token 即可获取。</p>
+<p>操作演示如下：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1565494135096-8b826d85-c432-4f8b-bac4-ebe8f7f4ebe2.png#align=left&display=inline&height=476&margin=%5Bobject%20Object%5D&name=image.png&originHeight=476&originWidth=1043&size=45101&status=done&style=none&width=1043" alt="image.png" title="">
+                </div>
+                <div class="image-caption">image.png</div>
+            </figure>
+<p>获取 Token 后，像之前操作的那样，打开博客项目路径中的 <code>D:\BLOG\blog\package.json</code>  新增配置代码（补充 token）：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"yuqueConfig"</span>: &#123;</span><br><span class="line">   <span class="string">"postPath"</span>: <span class="string">"source/_posts/yuque"</span>,</span><br><span class="line">   <span class="string">"cachePath"</span>: <span class="string">"yuque.json"</span>,</span><br><span class="line">   <span class="string">"mdNameFormat"</span>: <span class="string">"title"</span>,</span><br><span class="line">   <span class="string">"adapter"</span>: <span class="string">"hexo"</span>,</span><br><span class="line">   <span class="string">"concurrency"</span>: <span class="number">5</span>,</span><br><span class="line">   <span class="string">"baseUrl"</span>: <span class="string">"https://www.yuque.com/api/v2"</span>,</span><br><span class="line">   <span class="string">"login"</span>: <span class="string">"oneforall"</span>,</span><br><span class="line">   <span class="string">"repo"</span>: <span class="string">"MyBlog"</span>,</span><br><span class="line"></span><br><span class="line">   <span class="string">"token"</span>:<span class="string">"YourToken"</span>,</span><br><span class="line"></span><br><span class="line">   <span class="string">"onlyPublished"</span>: <span class="literal">false</span></span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-部署-需手动"><a href="#1-3-部署-需手动" class="headerlink" title="1.3 部署(需手动)"></a>1.3 部署(需手动)</h3><p>完成上面的操作以后，我们就已经可以拉取语雀的文章转至 hexo 部署了。</p>
+<h4 id="1-3-1-同步"><a href="#1-3-1-同步" class="headerlink" title="1.3.1 同步"></a>1.3.1 同步</h4><p>进入本地的博客项目路径，Shift + 右键 打开 Powershell 窗口，输入命令 <code>yuque-hexo sync</code>  将语雀的文章同步到本地。<br><em>【注】我这里用 Powershell 有点绕弯了，直接用 Git Bash 就行。</em></p>
+<p>同步成功时，你会看到下面的结果：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1565495393243-910fde74-ae0a-4779-9780-dd1ee5ef4a0b.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=177&originWidth=720&size=15447&status=done&style=none&width=720" alt="image.png" title="">
+                </div>
+                <div class="image-caption">image.png</div>
+            </figure>
+
+<p>PS.如果你在 1.2 配置中调取的知识库是私有的，但未在<code>package.json</code>注入环境变量 <code>YUQUE_TOKEN=xxx</code>  那么会收到下面的 error:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1565494263158-d912e93c-3e65-444c-a6be-9de95ab92ded.png#align=left&display=inline&height=126&margin=%5Bobject%20Object%5D&name=image.png&originHeight=126&originWidth=720&size=12712&status=done&style=none&width=720" alt="image.png" title="">
+                </div>
+                <div class="image-caption">image.png</div>
+            </figure>
+
+<p>此时你需要按照<a href="#kgQZN">1.2+私有知识库配置</a>的方式补充环境 Token.</p>
+<h4 id="1-3-2-本地预览"><a href="#1-3-2-本地预览" class="headerlink" title="1.3.2 本地预览"></a>1.3.2 本地预览</h4><p>就和 hexo 发布文章的操作一样，在 Git Bash 中输入 <code>hexo g &amp;&amp; hexo s</code></p>
+<h4 id="1-3-3-部署"><a href="#1-3-3-部署" class="headerlink" title="1.3.3 部署"></a>1.3.3 部署</h4><p>在 Git Bash 中输入 <code>hexo d</code></p>
+<h4 id="1-3-Npm-Scripts"><a href="#1-3-Npm-Scripts" class="headerlink" title="1.3+ Npm Scripts?"></a>1.3+ Npm Scripts?</h4><p><a href="https://github.com/x-cold/yuque-hexo" target="_blank" rel="noopener">https://github.com/x-cold/yuque-hexo</a>  提到了 Npm Scripts，按操作应该是打开博客项目路径中的 <code>D:\BLOG\blog\package.json</code>  新增下面的代码<del>，可以使用自定义的精简命令进行文章同步、预览、部署等操作。</del></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">	<span class="string">"dev"</span>: <span class="string">"npm run sync &amp;&amp; hexo s"</span>,</span><br><span class="line">    <span class="string">"sync"</span>: <span class="string">"yuque-hexo sync"</span>,</span><br><span class="line">    <span class="string">"clean:yuque"</span>: <span class="string">"yuque-hexo clean"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>但我现在还不清楚用来干嘛的，一开始以为可以精简命令，但试了一下没有用…原谅我对<code>package.json</code>暂时了解不多，一直在照葫芦画瓢…..</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.nlark.com/yuque/0/2019/png/302376/1565498076799-5f9739b2-82e6-4b27-aed6-8163873d95f0.png#align=left&display=inline&height=145&margin=%5Bobject%20Object%5D&name=image.png&originHeight=145&originWidth=562&size=12604&status=done&style=none&width=562" alt="image.png" title="">
+                </div>
+                <div class="image-caption">image.png</div>
+            </figure>
+
+<h2 id="2-实现自动部署"><a href="#2-实现自动部署" class="headerlink" title="2 实现自动部署"></a>2 实现自动部署</h2><p>待续</p>
+<h2 id="待读："><a href="#待读：" class="headerlink" title="待读："></a>待读：</h2><p><a href="https://www.yuque.com/u46795/blog/dlloc7" target="_blank" rel="noopener">Blog|Hexo 博客终极玩法：云端写作，自动部署</a><br><a href="https://joashzhao.github.io/blog/2019/07/16/yuque/%E8%AF%AD%E9%9B%80%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5HEXO%E6%9C%BA%E5%99%A8%E4%BA%BA%E2%80%94%E2%80%94%E6%90%AD%E5%BB%BA%E7%BB%86%E8%8A%82/" target="_blank" rel="noopener">https://joashzhao.github.io/blog/2019/07/16/yuque/语雀自动同步 HEXO 机器人——搭建细节/</a><br><a href="https://segmentfault.com/a/1190000019214202" target="_blank" rel="noopener">https://segmentfault.com/a/1190000019214202</a></p>
+<hr>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-06-27T14:04:20.421Z" itemprop="dateUpdated">2020-06-27 22:04:20</time>
+</span><br>
+
+
+        
+        <a href="/posts/yuqueANDhexo.html" target="_blank" rel="external">https://ihubx.top/posts/yuqueANDhexo.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://ihubx.top">
+            <img src="/img/logo.png" alt="修行の胡">
+            修行の胡
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yuque/" rel="tag">yuque</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://ihubx.top/posts/yuqueANDhexo.html&title=《语雀+hexo自动部署》 — Hu's space&pic=https://ihubx.top/img/logo.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://ihubx.top/posts/yuqueANDhexo.html&title=《语雀+hexo自动部署》 — Hu's space&source=语雀+hexo 自动部署" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://ihubx.top/posts/yuqueANDhexo.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《语雀+hexo自动部署》 — Hu's space&url=https://ihubx.top/posts/yuqueANDhexo.html&via=https://ihubx.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://ihubx.top/posts/yuqueANDhexo.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/posts/hexoNextBeautify.html" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">hexo-next 主题优化</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/posts/ShadowsocksPortProblem.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">win10端口被占用解决方法</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "Hj0vMgqkLUKdd6u4CQ4UnBrn-gzGzoHsz",
+            appKey: "TxriijpcFiFPCrHo0YYYjDEq",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="https://raw.githubusercontent.com/Rabbit-CHAN/FigureBed/master/wechat_hubx.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="https://raw.githubusercontent.com/Rabbit-CHAN/FigureBed/master/wechat_hubx.jpg" data-alipay="https://raw.githubusercontent.com/Rabbit-CHAN/FigureBed/master/zhifubao_hubx.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>修行の胡 &copy; 2019 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://ihubx.top/posts/yuqueANDhexo.html&title=《语雀+hexo自动部署》 — Hu's space&pic=https://ihubx.top/img/logo.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://ihubx.top/posts/yuqueANDhexo.html&title=《语雀+hexo自动部署》 — Hu's space&source=语雀+hexo 自动部署" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://ihubx.top/posts/yuqueANDhexo.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《语雀+hexo自动部署》 — Hu's space&url=https://ihubx.top/posts/yuqueANDhexo.html&via=https://ihubx.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://ihubx.top/posts/yuqueANDhexo.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByElEQVR42u3ay47CMAwF0P7/TzObWSAh2munMQidrKrSx6ELK7nOccTj8TRez5yff73m+cpjx8DFxV3mJi/IEdV3lZ+Pi4s7yH336HfHyUiIuQEXF/f7uedPSKY1uLi4v8TtQe96Pi4u7iQ3maas3JX/ettaDRcXd4Gbxxn7jrfku7i4uC3uozjWY9bee//vxcXFHeHmBaU64UgWRc334uLijnCTCc35bfliKY9jCh8IFxd3A/eurVTrwWthioOLi7uNWy03SQBaba4U2rG4uLiD3PXtFCsbOPLwBRcXd4a7I+DIC1zeMWn2fHBxcVvc6rSj+iWq7ZkLCS4u7iD3rpLUa8QW4ldcXNxBbnObVHFRlJ+J6i4uLu42bi+YyDdj5ZFoofWCi4s7yO01TXvl7PwzXfxVXFzcD3F7rY71JmvyB3BxcSe51WVJPt2pLq4ursTFxd3MfRRHgkiKXbP3i4uLO8LtBaPV5koSi6y3e3Fxce/l9opXLzDtncfFxf0UN29p9ILOvIJGazVcXNwv4/YC03y51UxNcHFxP8qtrp+arHdCXFzcQW51SbMeiZ6joyYrLi7uNm61lESbJIoxa+8z4eLibuD+AeeQAS95z0PTAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
