@@ -46,7 +46,7 @@ var _hmt = _hmt || [];
 <meta property="og:image" content="https://ww1.sinaimg.cn/large/005BYqpgly1g13gc41xehj30gg0bxwfa.jpg#align=left&display=inline&height=429&margin=%5Bobject%20Object%5D&originHeight=429&originWidth=592&status=done&style=none&width=592">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/302376/1595906793978-5dd166e3-668b-4500-8f9d-700f90e94b13.png#align=left&display=inline&height=183&margin=%5Bobject%20Object%5D&name=image.png&originHeight=183&originWidth=447&size=8958&status=done&style=none&width=447">
 <meta property="article:published_time" content="2019-02-23T06:46:00.000Z">
-<meta property="article:modified_time" content="2020-10-06T13:23:49.292Z">
+<meta property="article:modified_time" content="2020-10-06T13:38:14.867Z">
 <meta property="article:author" content="修行の胡">
 <meta property="article:tag" content="shadowsocks">
 <meta property="article:tag" content="win10">
@@ -220,7 +220,8 @@ var _hmt = _hmt || [];
             </figure>
 
 <p>自己是头一次遇到这类问题，下面通过图片演示解决方案。</p>
-<h2 id="Step0-重新启动-shadowsocks"><a href="#Step0-重新启动-shadowsocks" class="headerlink" title="Step0 重新启动 shadowsocks"></a>Step0 重新启动 shadowsocks</h2><p>重启或许是最简单有效的办法，如果还是不能解决问题，那么可以进行 Step1-&gt;Step2 的步骤。</p>
+<h2 id="Step0-重新启动-shadowsocks"><a href="#Step0-重新启动-shadowsocks" class="headerlink" title="Step0 重新启动 shadowsocks"></a>Step0 重新启动 shadowsocks</h2><p>关闭 Shadowsocks，并在任务管理器查看 ShadowsocksR <strong>是否已经正常关闭</strong>，之后重启之。</p>
+<p>这或许是最简单有效的办法，如果还是不能解决问题，则可以进行 Step1-&gt;Step2 的步骤。</p>
 <h2 id="Step1-在命令提示符中查看对应端口的运行情况"><a href="#Step1-在命令提示符中查看对应端口的运行情况" class="headerlink" title="Step1 在命令提示符中查看对应端口的运行情况"></a>Step1 在命令提示符中查看对应端口的运行情况</h2><p>首先进入<a href="https://baike.baidu.com/item/%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/998728?fr=aladdin" target="_blank" rel="noopener">命令提示符</a>，如图所示输入 <code>netstat -aon|findstr &quot;2000&quot;</code>，查看端口 2000 被哪个<a href="https://baike.baidu.com/item/%E8%BF%9B%E7%A8%8BID/16008380" target="_blank" rel="noopener">PID</a>所占用，结果如下图所示。可见，端口 2000 所对应的<a href="https://baike.baidu.com/item/%E8%BF%9B%E7%A8%8BID/16008380" target="_blank" rel="noopener">PID</a>为 7420.</p>
 <p>之后，输入<code>tasklist |findstr &quot;7420&quot;</code>，找到 PID 为 7420 所对应的进程名字。</p>
 <figure class="image-bubble">
@@ -258,7 +259,7 @@ var _hmt = _hmt || [];
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-10-06T13:23:49.292Z" itemprop="dateUpdated">2020-10-06 21:23:49</time>
+    最后更新时间：<time datetime="2020-10-06T13:38:14.867Z" itemprop="dateUpdated">2020-10-06 21:38:14</time>
 </span><br>
 
 
@@ -577,10 +578,10 @@ MathJax.Hub.Queue(function() {
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = '你快~回来~~';
             clearTimeout(titleTime);
         } else {
-            document.title = '(つェ⊂)咦!又好了!';
+            document.title = '(つェ⊂)!';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
